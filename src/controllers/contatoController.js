@@ -6,7 +6,7 @@ exports.index = (req, res) => {
 
 exports.register = async (req, res) => {
   try {
-    const contato = new Contato(req.doby);
+    const contato = new Contato(req.body);
     await contato.register();
     
     if(contato.errors.length > 0) {
