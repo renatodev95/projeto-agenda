@@ -9,7 +9,7 @@
       <h1 class="text-center">Contato</h1>
       <p class="text-center lead">Crie ou edite seu contato abaixo.</p>
 
-      <% include('includes/messages') %> 
+      <%- include('includes/messages.ejs') %> 
 
       <form action="/contato/register" method="POST">
         <input type="hidden" name="_csrf" value=<%= csrfToken %>>
